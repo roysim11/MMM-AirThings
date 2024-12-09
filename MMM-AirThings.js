@@ -5,6 +5,10 @@ Module.register("MMM-AirThings", {
         sensorId: null // Replace with your specific AirThings sensor ID
     },
 
+    getStyles: function () {
+        return ["MMM-AirThings.css"]; // Link to the CSS file
+    },
+
     start: function () {
         this.loaded = false;
         this.sensorData = null;
@@ -29,6 +33,7 @@ Module.register("MMM-AirThings", {
 
     getDom: function () {
         const wrapper = document.createElement("div");
+        wrapper.className = "MMM-AirThings";
 
         if (!this.loaded) {
             wrapper.innerHTML = "Loading AirThings data...";
