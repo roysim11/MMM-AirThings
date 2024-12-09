@@ -1,0 +1,9 @@
+{
+  "name": "MMM-AirThings",
+  "version": "1.0.0",
+  "description": "MagicMirror module for displaying AirThings sensor data.",
+  "main": "MMM-AirThings.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
