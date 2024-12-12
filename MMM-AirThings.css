@@ -1,31 +1,38 @@
-/* Center-align the module content */
+/* Set the background color of the module to black */
 .MMM-AirThings {
-    text-align: center;
-    font-family: "Arial", sans-serif;
-    color: white;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap when necessary */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Space between sensors */
+    padding: 0px;
+    background-color: transparent; /*#000000; /* Black background */
+    color: #ffffff; /* White text for contrast */
+    margin: 10px 20px 0px 0px;
 }
 
-/* Title styling */
+/* Style each sensor box */
+.MMM-AirThings > div {
+    flex: 200px; /* Each sensor block is now 200px wide (narrower) */
+    background-color: rgba(0, 0, 0, 0.8); /*#333333; /* Dark grey background for each sensor */
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 0px;
+    /*box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    color: #ffffff; /* White text inside each box */
+}
+
+/* Header styling inside each sensor box */
 .MMM-AirThings h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #00bcd4;
+    font-size: 16px; /* Smaller font size for the header */
+    text-align: center;
+    color: #ffffff; /* White text for headers */
+    margin: 10px 0;
 }
 
-/* Paragraph styling */
+/* Paragraph styling for the data */
 .MMM-AirThings p {
-    font-size: 1em;
-    margin: 5px 0;
-}
-
-/* Optional: Add background styling */
-.MMM-AirThings {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 10px;
-}
-
-/* Adjustments for spacing and visibility */
-.MMM-AirThings div {
+    font-size: 14px; /* Smaller font for data */
+    text-align: center;
+    color: #cccccc; /* Lighter grey text for data */
     margin: 5px 0;
 }
